@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:high_fidelity/features/home/presentaion/widgets/coffee_info_detail_widget.dart';
 
 class CoffeDetailBodyWidget extends StatelessWidget {
   const CoffeDetailBodyWidget({
@@ -48,92 +49,45 @@ class CoffeDetailBodyWidget extends StatelessWidget {
                 ),
               ),
             ),
-
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            CoffeeInfoDetailwidget(
+              name: name,
+              subtitle: subtitle,
+              rating: rating,
+              price: price,
+            ),
+           
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // Title and Rating
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      name,
+                      'Price',
+                      style: TextStyle(fontSize: 14.sp, color: Colors.grey),
+                    ),
+                    Text(
+                      '\$${price.toStringAsFixed(2)}',
                       style: TextStyle(
-                        fontSize: 24.sp,
+                        fontSize: 28.sp,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Row(
-                      children: [
-                        Icon(Icons.star, color: Colors.amber, size: 20.sp),
-                        SizedBox(width: 4.w),
-                        Text(
-                          rating.toString(),
-                          style: TextStyle(
-                            fontSize: 16.sp,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
                   ],
                 ),
-
-                SizedBox(height: 8.h),
-                Text(
-                  subtitle,
-                  style: TextStyle(fontSize: 16.sp, color: Colors.grey[600]),
-                ),
-
-                SizedBox(height: 24.h),
-                Text(
-                  'Description',
-                  style: TextStyle(
-                    fontSize: 18.sp,
-                    fontWeight: FontWeight.bold,
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.brown,
+                    minimumSize: Size(150.w, 50.h),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12.r),
+                    ),
                   ),
-                ),
-                SizedBox(height: 8.h),
-                Text(
-                  'A delicious $name with ${subtitle.toLowerCase()}. Perfect for coffee lovers who enjoy a rich and flavorful experience.',
-                  style: TextStyle(fontSize: 14.sp, color: Colors.grey[700]),
-                ),
-
-                SizedBox(height: 30.h),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Price',
-                          style: TextStyle(fontSize: 14.sp, color: Colors.grey),
-                        ),
-                        Text(
-                          '\$${price.toStringAsFixed(2)}',
-                          style: TextStyle(
-                            fontSize: 28.sp,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                    ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.brown,
-                        minimumSize: Size(150.w, 50.h),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12.r),
-                        ),
-                      ),
-                      child: Text(
-                        'Add to Cart',
-                        style: TextStyle(fontSize: 16.sp, color: Colors.white),
-                      ),
-                    ),
-                  ],
+                  child: Text(
+                    'Add to Cart',
+                    style: TextStyle(fontSize: 16.sp, color: Colors.white),
+                  ),
                 ),
               ],
             ),
