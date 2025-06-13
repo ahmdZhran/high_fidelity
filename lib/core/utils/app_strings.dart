@@ -36,4 +36,12 @@ class AppStrings {
   static const String weWillDeliver =
       "We will deliver your goods to you in the shortes possible time.";
   static const String personalCourier = "Personal Courier";
+  static const String promo = "Promo";
+
+  // tap bar string 
+  static const String espresso = "Espresso";
+  static const String cappuccino = "Cappuccino";
+  static const String latte = "Latte";
+  static const String machiato = "Machiato";
+  static const String allCoffe = "All Coffee";
 }

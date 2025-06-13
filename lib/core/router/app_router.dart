@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:high_fidelity/core/router/routes.dart';
+import 'package:high_fidelity/features/home/presentaion/screens/home_screen.dart';
 import 'package:high_fidelity/features/map/presentaion/screens/map_screen.dart';
 import 'package:high_fidelity/features/onboarding/presentation/screen/onboarding_screen.dart';
 import 'package:high_fidelity/features/order/presentaion/screens/order_screen.dart';
-import 'package:high_fidelity/main.dart';
 
 class AppRouter {
   Route? onGenerateRoute(RouteSettings settings) {
