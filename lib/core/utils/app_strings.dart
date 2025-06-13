@@ -24,7 +24,7 @@ class AppStrings {
   static const String buyNow = "Buy Now";
 
   // order screen strings
-  static const String order = "Deliver";
+  static const String order = "Order";
   static const String orderNow = "Pick Up";
   static const String deliveryAddress = "Delivery Address";
   static const String emailAddress = "Email Address";
