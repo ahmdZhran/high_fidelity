@@ -88,7 +88,6 @@ class CoffeeCard extends StatelessWidget {
                       ],
                     ),
 
-                    // Price and Add Button
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [

@@ -11,21 +11,7 @@ class AllCoffeeContent extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 16.w),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Section Header
-          Text(
-            "Popular Coffee",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 18.sp,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          SizedBox(height: 16.h),
-
-          // Coffee Grid
-          const Expanded(child: CoffeeGrid()),
-        ],
+        children: [const Expanded(child: CoffeeGrid())],
       ),
     );
   }
