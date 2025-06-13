@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:high_fidelity/core/utils/app_strings.dart';
 import 'package:high_fidelity/features/home/presentaion/widgets/coffee_tap_bar_widget.dart';
 import 'package:high_fidelity/features/home/presentaion/widgets/coffee_tap_content_widget.dart';
@@ -40,7 +39,6 @@ class HomeScreen extends HookWidget {
             selectedIndex: selectedIndex.value,
             coffeeTypes: coffeeTypes,
           ),
-          SizedBox(height: 16.h),
           CoffeeTabContent(
             tabController: tabController,
             coffeeTypes: coffeeTypes,

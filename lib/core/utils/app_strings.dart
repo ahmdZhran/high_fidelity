@@ -14,14 +14,14 @@ class AppStrings {
   static const String searchCoffee = "Search coffee";
 
   // details screen strings
-  static const String details = "Details";
+  static const String detail = "Detail";
   static const String description = "Description";
   static const String size = "Size";
   static const String small = "S";
   static const String medium = "M";
   static const String large = "L";
   static const String price = "Price";
-  static const String butNow = "Buy Now";
+  static const String buyNow = "Buy Now";
 
   // order screen strings
   static const String order = "Deliver";
@@ -38,7 +38,7 @@ class AppStrings {
   static const String personalCourier = "Personal Courier";
   static const String promo = "Promo";
 
-  // tap bar string 
+  // tap bar string
   static const String espresso = "Espresso";
   static const String cappuccino = "Cappuccino";
   static const String latte = "Latte";

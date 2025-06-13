@@ -13,7 +13,9 @@ class CustomButtonWidget extends StatelessWidget {
     this.side,
     this.fontColor,
     this.buttonTextStyle,
+    this.borderRadius,
   });
+
   final Color? color;
   final VoidCallback onPressed;
   final String text;
@@ -23,6 +25,8 @@ class CustomButtonWidget extends StatelessWidget {
   final BorderSide? side;
   final Color? fontColor;
   final TextStyle? buttonTextStyle;
+  final double? borderRadius;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -33,7 +37,7 @@ class CustomButtonWidget extends StatelessWidget {
           side: side,
           backgroundColor: color ?? AppColors.primaryColor,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(borderRadius ?? 10),
           ),
         ),
         onPressed: onPressed,
