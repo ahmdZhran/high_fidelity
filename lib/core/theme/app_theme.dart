@@ -6,7 +6,7 @@ class AppTheme {
   static final lightTheme = ThemeData(
     brightness: Brightness.light,
     primaryColor: AppColors.whiteColor,
-    scaffoldBackgroundColor: AppColors.whiteColor,
+    scaffoldBackgroundColor: AppColors.lightColorThere,
     colorScheme: const ColorScheme.light(primary: Colors.black),
     appBarTheme: const AppBarTheme(
       backgroundColor: AppColors.whiteColor,

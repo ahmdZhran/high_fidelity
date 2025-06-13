@@ -1,7 +1,6 @@
-// widgets/coffee_tab_content.dart
 import 'package:flutter/material.dart';
 import 'package:high_fidelity/features/home/presentaion/widgets/coffee_tap_screen.dart'
-    show CoffeeTabScreen;
+    show CoffeeTapScreenWidget;
 
 class CoffeeTabContent extends StatelessWidget {
   final TabController tabController;
@@ -20,7 +19,9 @@ class CoffeeTabContent extends StatelessWidget {
         controller: tabController,
         children:
             coffeeTypes
-                .map((coffeeType) => CoffeeTabScreen(coffeeType: coffeeType))
+                .map(
+                  (coffeeType) => CoffeeTapScreenWidget(coffeeType: coffeeType),
+                )
                 .toList(),
       ),
     );
