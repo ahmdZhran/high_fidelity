@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:high_fidelity/core/helper/extensions.dart';
+import 'package:high_fidelity/core/router/routes.dart';
 import 'package:high_fidelity/core/utils/app_assets.dart';
 import 'package:high_fidelity/core/utils/app_colors.dart';
 import 'package:high_fidelity/core/utils/app_strings.dart';
@@ -52,7 +54,9 @@ class OnboardingScreen extends StatelessWidget {
                     height: 56.h,
                     width: double.infinity,
                     fontColor: AppColors.whiteColor,
-                    onPressed: () {},
+                    onPressed: () {
+                      context.pushNamed(Routes.homeScreen);
+                    },
                     text: AppStrings.getStarted,
                     buttonTextStyle: TextStyle(
                       color: AppColors.whiteColor,
