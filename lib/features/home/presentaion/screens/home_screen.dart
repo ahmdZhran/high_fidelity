@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:high_fidelity/app/high_fidlity_app.dart';
-
-void main() {
-  runApp(const HighFidelity());
-}
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
