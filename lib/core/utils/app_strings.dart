@@ -21,7 +21,7 @@ class AppStrings {
   static const String medium = "M";
   static const String large = "L";
   static const String price = "Price";
-  static const String butNow = "Buy Now";
+  static const String buyNow = "Buy Now";
 
   // order screen strings
   static const String order = "Deliver";

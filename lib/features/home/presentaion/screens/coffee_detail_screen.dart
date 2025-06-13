@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:high_fidelity/core/utils/app_assets.dart';
 import 'package:high_fidelity/core/utils/app_strings.dart';
 import 'package:high_fidelity/features/home/presentaion/widgets/coffee_detail_body_widget.dart';
+import 'package:high_fidelity/features/home/presentaion/widgets/favorite_button_widget.dart';
 
 class CoffeeDetailScreen extends StatelessWidget {
   final String name;
@@ -33,12 +32,7 @@ class CoffeeDetailScreen extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
-        actions: [
-          IconButton(
-            icon: SvgPicture.asset(AppAssets.favoriteIcon),
-            onPressed: () {},
-          ),
-        ],
+        actions: [FavoriteButton()],
       ),
       body: CoffeDetailBodyWidget(
         image: image,

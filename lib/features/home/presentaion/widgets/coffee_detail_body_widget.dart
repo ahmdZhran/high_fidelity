@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:high_fidelity/core/utils/app_colors.dart';
+import 'package:high_fidelity/core/utils/app_strings.dart';
+import 'package:high_fidelity/core/widgets/custom_button_widget.dart';
 import 'package:high_fidelity/features/home/presentaion/widgets/coffee_info_detail_widget.dart';
 
 class CoffeDetailBodyWidget extends StatelessWidget {
@@ -55,7 +58,6 @@ class CoffeDetailBodyWidget extends StatelessWidget {
               rating: rating,
               price: price,
             ),
-           
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -63,30 +65,29 @@ class CoffeDetailBodyWidget extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Price',
+                      AppStrings.price,
                       style: TextStyle(fontSize: 14.sp, color: Colors.grey),
                     ),
                     Text(
                       '\$${price.toStringAsFixed(2)}',
                       style: TextStyle(
-                        fontSize: 28.sp,
-                        fontWeight: FontWeight.bold,
+                        fontSize: 18.sp,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.primaryColor,
                       ),
                     ),
                   ],
                 ),
-                ElevatedButton(
+                CustomButtonWidget(
+                  height: 50.h,
+                  width: 217.w,
+                  borderRadius: 16.r,
                   onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.brown,
-                    minimumSize: Size(150.w, 50.h),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12.r),
-                    ),
-                  ),
-                  child: Text(
-                    'Add to Cart',
-                    style: TextStyle(fontSize: 16.sp, color: Colors.white),
+                  text: AppStrings.buyNow,
+                  buttonTextStyle: TextStyle(
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white,
                   ),
                 ),
               ],
