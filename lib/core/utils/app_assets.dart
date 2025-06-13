@@ -13,4 +13,5 @@ class AppAssets {
   static const String arrowDown = "assets/svgs/arrow_down.svg";
   static const String searchIcon = "assets/svgs/search_icon.svg";
   static const String textBanner = "assets/svgs/Text_banner.svg";
+  static const String favoriteIcon = "assets/svgs/favorite_icon.svg";
 }

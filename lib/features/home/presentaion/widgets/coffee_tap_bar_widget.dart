@@ -18,7 +18,7 @@ class CoffeeTabBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.w),
+      padding: EdgeInsets.symmetric(horizontal: 22.w),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -36,4 +36,3 @@ class CoffeeTabBar extends StatelessWidget {
     );
   }
 }
-

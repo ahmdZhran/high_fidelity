@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:high_fidelity/core/utils/app_assets.dart';
+import 'package:high_fidelity/features/home/presentaion/screens/coffee_detail_screen.dart';
 import 'package:high_fidelity/features/home/presentaion/widgets/coffe_card_widget.dart';
 
 class CoffeeGrid extends StatelessWidget {
@@ -55,10 +56,23 @@ class CoffeeGrid extends StatelessWidget {
           price: coffee['price'],
           rating: coffee['rating'],
           image: coffee['image'],
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder:
+                    (context) => CoffeeDetailScreen(
+                      name: coffee['name'],
+                      subtitle: coffee['subtitle'],
+                      price: coffee['price'],
+                      rating: coffee['rating'],
+                      image: coffee['image'],
+                    ),
+              ),
+            );
+          },
         );
       },
     );
   }
 }
-
