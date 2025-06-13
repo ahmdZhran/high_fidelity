@@ -10,7 +10,7 @@ class CustomCardLabelWidget extends StatelessWidget {
     return SizedBox(
       height: 44.h,
       width: 44.h,
-      child: widget ?? Card(elevation: 3, child: Image.asset(icon!)),
+      child: widget ?? Card(elevation: 0, child: Image.asset(icon!)),
     );
   }
 }

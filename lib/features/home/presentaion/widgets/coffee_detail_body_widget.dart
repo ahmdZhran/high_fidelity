@@ -58,6 +58,7 @@ class CoffeDetailBodyWidget extends StatelessWidget {
               rating: rating,
               price: price,
             ),
+            SizedBox(height: 5.h),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -78,6 +79,7 @@ class CoffeDetailBodyWidget extends StatelessWidget {
                     ),
                   ],
                 ),
+
                 CustomButtonWidget(
                   height: 50.h,
                   width: 217.w,

@@ -49,20 +49,30 @@ class CoffeeInfoDetailwidget extends StatelessWidget {
           ],
         ),
         Row(
-          spacing: 5.w,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Icon(Icons.star, color: Colors.amber, size: 20.sp),
+
+            SizedBox(width: 4.w),
 
             Text(
               rating.toString(),
               style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w600),
             ),
-            Text(
-              '(230)',
-              style: TextStyle(fontSize: 16.sp, color: AppColors.greyColor),
+
+            SizedBox(width: 5.w),
+
+            Baseline(
+              baseline: 14.sp,
+              baselineType: TextBaseline.alphabetic,
+              child: Text(
+                '(230)',
+                style: TextStyle(fontSize: 14.sp, color: AppColors.greyColor),
+              ),
             ),
           ],
         ),
+
         SizedBox(height: 5.h),
         Divider(color: AppColors.greyColor, endIndent: 15.w, indent: 15.w),
         SizedBox(height: 24.h),
