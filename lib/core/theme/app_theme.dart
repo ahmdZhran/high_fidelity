@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:high_fidelity/core/utils/app_colors.dart';
+import 'package:high_fidelity/core/utils/app_strings.dart';
 
 class AppTheme {
   static final lightTheme = ThemeData(
@@ -14,14 +15,17 @@ class AppTheme {
         color: Colors.black,
         fontWeight: FontWeight.bold,
         fontSize: 20,
-        fontFamily: 'Sora',
+        fontFamily: AppStrings.appFontName,
       ),
     ),
     iconTheme: const IconThemeData(color: Colors.black),
     textTheme: const TextTheme(
-      bodyMedium: TextStyle(color: Colors.black, fontFamily: 'Sora'),
+      bodyMedium: TextStyle(
+        color: Colors.black,
+        fontFamily: AppStrings.appFontName,
+      ),
     ),
-    fontFamily: 'Pacifico',
+    fontFamily: AppStrings.appFontName,
     bottomSheetTheme: const BottomSheetThemeData(
       backgroundColor: AppColors.whiteColor,
     ),

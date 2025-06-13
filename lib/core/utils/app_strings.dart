@@ -1,6 +1,6 @@
 class AppStrings {
   static const String appName = 'High Fidelity';
-
+  static const String appFontName = "Sora";
   // onboarding strings
   static const String onBoardingString =
       "Fall in Love with\n Coffee in Blissful\n Delight!";

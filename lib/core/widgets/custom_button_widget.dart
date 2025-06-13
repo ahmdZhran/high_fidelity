@@ -12,6 +12,7 @@ class CustomButtonWidget extends StatelessWidget {
     this.height,
     this.side,
     this.fontColor,
+    this.buttonTextStyle,
   });
   final Color? color;
   final VoidCallback onPressed;
@@ -21,6 +22,7 @@ class CustomButtonWidget extends StatelessWidget {
   final double? height;
   final BorderSide? side;
   final Color? fontColor;
+  final TextStyle? buttonTextStyle;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -35,15 +37,7 @@ class CustomButtonWidget extends StatelessWidget {
           ),
         ),
         onPressed: onPressed,
-        child: Text(
-          text,
-          style: TextStyle(
-            color: fontColor,
-            fontSize: 20,
-            fontFamily: "Sora",
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        child: Text(text, style: buttonTextStyle),
       ),
     );
   }
