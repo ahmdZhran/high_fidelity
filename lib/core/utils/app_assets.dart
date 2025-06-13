@@ -7,8 +7,9 @@ class AppAssets {
   static const String profileImage = "assets/images/profile_image.png";
   static const String wideCoffeMochaImage =
       "assets/images/wide_coffee_mocha_image.png";
-static const String deliveryIcon = "assets/svgs/delivery_icon.svg";
-static const String filterIcoin = "assets/svgs/filter_icon.svg";
-static const String phoneIcon = "assets/svgs/phone_icon.svg";
-    
+  static const String deliveryIcon = "assets/svgs/delivery_icon.svg";
+  static const String filterIcoin = "assets/svgs/filter_icon.svg";
+  static const String phoneIcon = "assets/svgs/phone_icon.svg";
+  static const String arrowDown = "assets/svgs/arrow_down.svg";
+  static const String searchIcon = "assets/svgs/search_icon.svg";
 }
