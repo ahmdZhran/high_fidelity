@@ -1,16 +1,18 @@
-# high_fidelity
+🧪 About the Project
+This project is a UI-focused Flutter application built using Flutter Hooks for the first time. The goal was to explore hooks as a cleaner alternative to StatefulWidgets, while maintaining a well-structured and readable codebase.
 
-A new Flutter project.
+Key highlights:
 
-## Getting Started
+✅ First-time use of flutter_hooks for managing state and effects
 
-This project is a starting point for a Flutter application.
+📐 Clean and organized folder structure
 
-A few resources to get you started if this is your first Flutter project:
+🎨 Focus on beautiful and responsive UI
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+📦 Modular components to enhance reusability
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+💡 Learning-based project aimed at mastering hooks in a real app
+
+##  Screenshots UI
+<img width="1205" height="661" alt="Screenshot 2025-07-10 191621" src="https://github.com/user-attachments/assets/72de3e8d-d247-4b55-9763-a6db247c9d8a" />
+<img width="1212" height="667" alt="Screenshot 2025-07-10 192949" src="https://github.com/user-attachments/assets/9051145e-dd2c-4ea0-afca-5d0fd4cb7d4b" />
