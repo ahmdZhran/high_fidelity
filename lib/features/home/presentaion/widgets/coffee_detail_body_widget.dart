@@ -4,6 +4,7 @@ import 'package:high_fidelity/core/utils/app_colors.dart';
 import 'package:high_fidelity/core/utils/app_strings.dart';
 import 'package:high_fidelity/core/widgets/custom_button_widget.dart';
 import 'package:high_fidelity/features/home/presentaion/widgets/coffee_info_detail_widget.dart';
+import 'package:high_fidelity/features/order/presentaion/screens/order_screen.dart';
 
 class CoffeDetailBodyWidget extends StatelessWidget {
   const CoffeDetailBodyWidget({
@@ -84,7 +85,20 @@ class CoffeDetailBodyWidget extends StatelessWidget {
                   height: 50.h,
                   width: 217.w,
                   borderRadius: 16.r,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder:
+                            (context) => OrderScreen(
+                              name: name,
+                              subtitle: subtitle,
+                              price: price,
+                              image: image,
+                            ),
+                      ),
+                    );
+                  },
                   text: AppStrings.buyNow,
                   buttonTextStyle: TextStyle(
                     fontSize: 16.sp,
