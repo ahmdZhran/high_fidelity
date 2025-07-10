@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:high_fidelity/core/utils/app_strings.dart';
+import 'package:high_fidelity/features/order/presentaion/widgets/custom_tap_bar_widget.dart';
 
 class OrderScreen extends StatelessWidget {
   const OrderScreen({
@@ -17,6 +18,7 @@ class OrderScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(AppStrings.order), centerTitle: true),
+      body: CustomOrderTab(),
     );
   }
 }

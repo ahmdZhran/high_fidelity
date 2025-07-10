@@ -37,6 +37,7 @@ class AppStrings {
       "We will deliver your goods to you in the shortes possible time.";
   static const String personalCourier = "Personal Courier";
   static const String promo = "Promo";
+  static const String delever = "Delever";
 
   // tap bar string
   static const String espresso = "Espresso";
